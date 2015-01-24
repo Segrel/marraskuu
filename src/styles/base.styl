@@ -1,0 +1,51 @@
+@import 'nib'
+
+@keyframes fadeIn {
+  from {
+    opacity:0
+  }
+  to {
+    opacity:1
+  }
+}
+
+html,body
+  width: 100%
+  height: 100%
+  font-weight: 100
+  background-color: #f4f4f4
+  color: gray
+  margin: 0
+
+.main-container
+  position: fixed
+  margin: auto
+  top: 0
+  left: 0
+  right:0
+  bottom: 0
+  font-family: 'helvetica neue' 'helvetica'
+  letter-spacing: 2px
+  font-size: 24px
+  height: 80px
+  text-align: center
+
+.main-text
+  color: #444444
+  padding-bottom: 20px
+  font-weight: 200
+
+.countdown
+  opacity: 0
+
+.fade-in
+  opacity: 0
+  animation: fadeIn ease-in 1
+  animation-fill-mode: forwards
+  animation-duration: 1s
+
+.fade-in.one
+  animation-delay: 0.7s
+
+.hide
+  display: none
