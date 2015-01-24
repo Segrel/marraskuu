@@ -4,7 +4,7 @@
   "authors": [
     "Segrel Koskentausta <segrealm@gmail.com>"
   ],
-  "description": "infomercial about november in finland",
+  "description": "an infomercial about november in finland",
   "main": "index.html",
   "license": "MIT",
   "homepage": "marraskuu.fi",
@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "moment": "~2.8.3"
+    "moment": "~2.8.3",
+    "react": "~0.12.2"
   }
 }

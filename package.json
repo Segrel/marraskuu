@@ -1,0 +1,17 @@
+{
+  "name": "marraskuu",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-inline-source": "~1.1.0",
+    "gulp-react": "~2.0.0",
+    "gulp-concat": "~2.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Segrel Koskentausta <inbox@segrel.org>",
+  "license": "MIT"
+}
