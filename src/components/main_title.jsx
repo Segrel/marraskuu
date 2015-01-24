@@ -19,7 +19,7 @@ var MainTitle = React.createClass({
           <div>
             <div className="main-text">Kohta on marraskuu</div>
           </div>
-          <NovemberCounter />;
+          <NovemberCounter />
         </div>
       );
     }
