@@ -1,3 +1,3 @@
-window.App = function() {
+var App = function() {
   React.render(<MainTitle />, document.querySelector('.main-container'));
 };

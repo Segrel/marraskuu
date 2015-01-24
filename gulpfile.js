@@ -4,6 +4,7 @@ var inlinesource = require('gulp-inline-source');
 var concat = require('gulp-concat');
 var stylus = require('gulp-stylus');
 var nib = require('nib');
+var uglify = require('gulp-uglify');
 
 gulp.task('copystatic', function() {
   return gulp.src(['src/index.html'])
@@ -23,12 +24,14 @@ gulp.task('buildcomponents', function() {
   return gulp.src('src/components/*')
     .pipe(react())
     .pipe(concat('components.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./build'));
 });
 
 gulp.task('buildapp', function() {
   return gulp.src('src/app.js')
     .pipe(react())
+    .pipe(uglify())
     .pipe(gulp.dest('./build'));
 });
 
