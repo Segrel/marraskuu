@@ -5,9 +5,10 @@ var concat = require('gulp-concat');
 var stylus = require('gulp-stylus');
 var nib = require('nib');
 var uglify = require('gulp-uglify');
+var cssbase64 = require('gulp-css-base64');
 
 gulp.task('copystatic', function() {
-  return gulp.src(['src/index.html'])
+  return gulp.src(['src/index.html', 'assets/*'])
     .pipe(gulp.dest('./build'));
 });
 
@@ -17,6 +18,12 @@ gulp.task('compilecss', function() {
       use: nib()
     }))
     .pipe(concat('style.css'))
+    .pipe(gulp.dest('./build'));
+});
+
+gulp.task('inlinecss', function() {
+  return gulp.src('build/style.css')
+    .pipe(cssbase64())
     .pipe(gulp.dest('./build'));
 });
 

@@ -1,3 +1,3 @@
 var App = function() {
-  React.render(<MainTitle />, document.querySelector('.main-container'));
+  React.render(<TheCanvas />, document.querySelector('.main-container'));
 };
